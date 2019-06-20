@@ -11,8 +11,8 @@ By Elizabeth Hinson
 let numberOfItems = 10;
 const studentInfo = document.querySelectorAll('.student-item');
 
+console.log(numberInfoItems);
 console.log(studentInfo);
-console.log (numberInfoItems);
 
 /*** 
    Created a showPage function to hide all of the items on a page except 10 at a time. For page one just show items 0-9, 
@@ -30,10 +30,6 @@ const showPage = (studentInfo, page) => {
 }; 
    showPage(studentInfo, 1);
    
-// if(numberOfItems[10].studentInfo) {
- //  showPage = numberOfItems[10];
-   //
-
 /***
  Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
@@ -45,7 +41,7 @@ const showPage = (studentInfo, page) => {
 // eventTarget.addEventListener(
 
 // )
-// target.addEventListener(type, listener[,options]);
+// target.addEventListener(type, listener[(numberOfItems),options]);
 // window.setTimeout(add.5000,2,2);
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
