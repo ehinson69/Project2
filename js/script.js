@@ -12,23 +12,17 @@ let numberOfItems = 10;
 const studentInfo = document.querySelectorAll('.student-item');
 
 console.log(studentInfo);
-console.log (numberInfoItems);
 
 /*** 
-   Created a showPage function to hide all of the items on a page except 10 at a time. For page one just show items 0-9, 
-   for page two just show 10-19, and so forth, while hiding the rest ***/
+   Created a showPage function to hide all of the items on a page except 10 at a time. ***/
 const showPage = (studentInfo, page) => {
-   let startIndex = (page * numberOfItems) - numberOfItems;
-   let endIndex = page * numberOfItems;
+   const startIndex = (page * numberOfItems) - numberOfItems;
+   const endIndex = page * numberOfItems;
       for (let i = 0; i < studentInfo.length; i++) {
-         if (i >= startIndex && i < endIndex) {
-            studentInfo[i].style.display = 'block'; //showing
-         } else {
-            studentInfo[i].style.display = 'none'; //hiding
-         }
+      i >= startIndex && i < endIndex;   
       }
-}; 
-   showPage(studentInfo, 1);
+   } 
+   showPage();
    
 // if(numberOfItems[10].studentInfo) {
  //  showPage = numberOfItems[10];
