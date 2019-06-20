@@ -40,21 +40,25 @@ console.log(studentInfo);
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
-const showPage = (list, page) => {
-
-for (let i = 0; i < numberOfItems.length, i +=1; {
-   numberofItems[10].studentInfo;
-
+const showPage = (studentInfo, numberOfItems) => {
+   var i;
+   var page = numberOfItems;
+      for (let i = 0; i < numberOfItems.length, i++) {
+         if(numberOfItems[10].studentInfo) {
+         showPage = numberOfItems[10];
+      }
+   }
+   passListData(showPage);
 }
 
 
-
-
-/*** 
-Create the `appendPageLinks function` to generate, append, and add 
+/***
+ Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
-function 
+const appendPageLinks = () => {
+
+}
 /***targets an element on a page that set up the callback to fire in resonse to the specified event. */
 eventTarget.addEventListener(
 
