@@ -11,7 +11,7 @@ By Elizabeth Hinson
 let numberOfItems = 10;
 const studentInfo = document.querySelectorAll('.student-item');
 
-console.log(numberInfoItems);
+console.log(numberOfItems);
 console.log(studentInfo);
 
 /*** 
