@@ -18,7 +18,7 @@ console.log(studentInfo);
 const showPage = (studentInfo, page) => {
    const startIndex = (page * numberOfItems) - numberOfItems;
    const endIndex = page * numberOfItems;
-      for let i = 0; i < studentInfo.length; i++) {
+      for (let i = 0; i < studentInfo.length; i++) {
       i >= startIndex && i < endIndex;   
       }
    } 
