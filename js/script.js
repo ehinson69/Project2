@@ -40,12 +40,6 @@ const appendPageLinks = (studentInfo) => {
    ul = 'li';
 
 }
- if($('.pagination').length === 0){
-   $('.page').append(`<div class="${pagination}">
-       <ul></ul>
-   </div>
-`);
-} 
 
 /***targets an element on a page that set up the callback to fire in resonse to the specified event. */
  eventTarget.addEventListener(
