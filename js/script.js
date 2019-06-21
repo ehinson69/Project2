@@ -39,9 +39,7 @@ const appendPageLinks = (studentInfo) => {
    div = setAttribute('pagination');
    ul = 'li';
 
-   document.addEventListener('appendPageLinks');
-   appendPageLinks(0); 
- }
+}
  if($('.pagination').length === 0){
    $('.page').append(`<div class="${pagination}">
        <ul></ul>
