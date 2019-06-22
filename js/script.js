@@ -7,7 +7,7 @@ By Elizabeth Hinson
 // Study guide for this project - https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing
 
 /***Created two global variables to store in the DOM, which will call a list of 10 students and student information on a page.***/
-let numberOfItems = 10;
+const numberOfItems = 10;
 const studentInfo = document.querySelectorAll('.student-item');
 
 console.log(numberOfItems);
