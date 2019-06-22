@@ -33,12 +33,14 @@ const showPage = (studentInfo, page) => {
    functionality to the pagination buttons.
 ***/
 const appendPageLinks = (studentInfo) => {
+   let page = document.createElement("page");
    let div = document.createElement("div");
    let ul = document.createElement("ul");
-   let li = document.querySelector("page");
-   div = setAttribute('pagination');
+   div.setAttribute('pagination');
+   a.className("active", "#");
+   page.appendChild(div);
+   div.appendChild(ul);
    ul.appendChild(li);
-   li.textContent = addItemInput.value = 'numberOfItems';
    <div class="pagination">
       <ul>
          <li>
