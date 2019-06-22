@@ -28,47 +28,38 @@ const showPage = (studentInfo, page) => {
 }; 
    showPage(studentInfo, 1); //show result with new search
    
-/***
- Create the `appendPageLinks function` to generate, append, and add 
-   functionality to the pagination buttons.
-***/
+/***Create the `appendPageLinks function` to generate, append, and add 
+   functionality to the pagination buttons.***/
+
 const appendPageLinks = (studentInfo) => {
    let page = document.createElement("page");
    let div = document.createElement("div");
    let ul = document.createElement("ul");
-   div.setAttribute('pagination');
-   a.className("active", "#");
+   div.className=('pagintion');
+   div.setAttribute('class', 'pagination');
    page.appendChild(div);
    div.appendChild(ul);
-   ul.appendChild(li);
-   <div class="pagination">
-      <ul>
-         <li>
-           <a class="active" href="#">1</a>
-         </li>
-         <li>
-           <a href="#">2</a>
-         </li>
-         <li>
-           <a href="#">3</a>
-         </li>
-         <li>
-           <a href="#">4</a>
-         </li>
-         <li>
-           <a href="#">5</a>
-         </li>
-      </ul>
-   </div>
 
-   )
-}
+   for(let i = 1; 1 <= getNumberOfPages(studentInfo); i++){
+      let li = document.createElement('li');
+      let a = document.createElement('a');
+      a.setAttribute('href', '#');
+      ul.appendChild(li);
+      li.appendChild(a);
+      a.textContent = i;
+      a.addEventListener('click', (e) => {
+         let a = document.querySelectorAll('.pagination li a');
+         for(let k=0; <a.length; k++) {
+            a[k].className = '';
+         }
+         e.target.className = 'active';
+         showPage(studentInfo, event.target.textContent);
+      });
+   }
+}  
+   
+   
+  
 
-/***targets an element on a page that set up the callback to fire in resonse to the specified event. */
- eventTarget.addEventListener(
 
- )
- target.addEventListener(type, listener[(numberOfItems),options]);
- window.setTimeout(add,5000,2,2);
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
+//Remember to delete the comments that came with this file, and replace them with your own code comments.
