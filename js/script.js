@@ -35,10 +35,31 @@ const showPage = (studentInfo, page) => {
 const appendPageLinks = (studentInfo) => {
    let div = document.createElement("div");
    let ul = document.createElement("ul");
-   let li = document.createElement("page");
+   let li = document.querySelector("page");
    div = setAttribute('pagination');
-   ul = 'li';
+   ul.appendChild(li);
+   li.textContent = addItemInput.value = 'numberOfItems';
+   <div class="pagination">
+      <ul>
+         <li>
+           <a class="active" href="#">1</a>
+         </li>
+         <li>
+           <a href="#">2</a>
+         </li>
+         <li>
+           <a href="#">3</a>
+         </li>
+         <li>
+           <a href="#">4</a>
+         </li>
+         <li>
+           <a href="#">5</a>
+         </li>
+      </ul>
+   </div>
 
+   )
 }
 
 /***targets an element on a page that set up the callback to fire in resonse to the specified event. */
