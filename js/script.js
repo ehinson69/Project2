@@ -13,6 +13,10 @@ const studentInfo = document.querySelectorAll('.student-item');
 console.log(numberOfItems);
 console.log(studentInfo);
 
+function getNumberOfPages(){
+   return Math.ceil(studentInfo.length/itemsPerPage);
+}
+
 /***Created a showPage function to hide all of the items on a page except 10 at a time. For page one just show items 0-9, 
    for page two just show 10-19, and so forth, while hiding the rest ***/
 const showPage = (studentInfo, page) => {
@@ -49,7 +53,7 @@ const appendPageLinks = (studentInfo) => {
       a.textContent = i;
       a.addEventListener('click', (e) => {
          let a = document.querySelectorAll('.pagination li a');
-         for(let k=0; <a.length; k++) {
+         for(let k=0; k <a.length; k++) {
             a[k].className = '';
          }
          e.target.className = 'active';
@@ -57,9 +61,6 @@ const appendPageLinks = (studentInfo) => {
       });
    }
 }  
-   
-   
-  
-
-
-//Remember to delete the comments that came with this file, and replace them with your own code comments.
+//showpage(studentList, textContent);
+showPage(studentList, 1);
+appendPageLinks;
