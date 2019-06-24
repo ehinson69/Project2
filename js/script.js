@@ -9,6 +9,7 @@ By Elizabeth Hinson
 /***Created two global variables to store in the DOM, which will call a list of 10 students and student information on a page.***/
 const studentInfo = document.querySelectorAll('.student-item');
 const numberOfItems = 10;
+
 //console.log(numberOfItems);
 //console.log(studentInfo);
 
@@ -30,13 +31,14 @@ function showPage(studentInfo, page) {
       }
    }
 }
+
 //showPage(studentInfo, textContent);
      
 /***Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.***/
 
-function appendPageLinks() {
-   const page = document.querySelectAll('#page a');
+function appendPageLinks(studentInfo) {
+   const page = document.querySelectorAll('.page');
    let div = document.createElement('div');
    let ul = document.createElement('ul');
    div.setAttribute('class', 'pagination');
@@ -63,6 +65,6 @@ function appendPageLinks() {
 
 //showPage(studentList, textContent);
 showPage(studentInfo, 1);
-appendPageLinks();
+appendPageLinks(studentInfo);
 
 //let link = document.querySelectAll('.pagination a')
