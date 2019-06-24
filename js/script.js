@@ -13,7 +13,7 @@ const numberOfItems = 10;
 //console.log(studentInfo);
 
 function getNumberOfPages() {
-   return Math.ceil(studentInfo.length / numberOfItems);
+   return Math.ceil(studentInfo.length/numberOfItems);
 }
 
 /***Created a showPage function to hide all of the items on a page except 10 at a time. For page one just show items 0-9, 
