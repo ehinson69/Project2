@@ -36,15 +36,14 @@ function showPage(studentInfo, page) {
    functionality to the pagination buttons.***/
 
 function appendPageLinks() {
-   let page = document.createElement("page");
-   let div = document.createElement("div");
-   let ul = document.createElement("ul");
-   div.className=('pagination');
+   const page = document.querySelectAll('page');
+   let div = document.createElement('div');
+   let ul = document.createElement('ul');
    div.setAttribute('class', 'pagination');
    page.appendChild(div);
    div.appendChild(ul);
 
-   for(let i = 1; 1 <= getNumberOfPages(studentInfo); i++) {
+   for(let i = 1; 1 <= getNumberOfPages(); i++) {
       let li = document.createElement('li');
       let a = document.createElement('a');
       a.setAttribute('href', '#');
