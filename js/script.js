@@ -38,14 +38,14 @@ function showPage(studentInfo, page) {
    functionality to the pagination buttons.***/
 
 function appendPageLinks(studentInfo) {
-   const page = document.querySelectorAll('.page');
+   let page = document.querySelector('.page');
    let div = document.createElement('div');
    let ul = document.createElement('ul');
    div.setAttribute('class', 'pagination');
    page.appendChild(div);
    div.appendChild(ul);
 
-   for(let i = 1; 1 <= getNumberOfPages(); i++) {
+   for(let i = 1; i <= getNumberOfPages(); i++) {
       let li = document.createElement('li');
       let a = document.createElement('a');
       a.setAttribute('href', '#');
@@ -61,7 +61,7 @@ function appendPageLinks(studentInfo) {
          showPage(studentInfo, event.target.textContent);
       });
    }
-}  
+};  
 
 //showPage(studentList, textContent);
 showPage(studentInfo, 1);
