@@ -66,8 +66,7 @@ function appendPageLinks(studentInfo) {
    }
 };  
 
-//showPage(studentList, textContent);
 showPage(studentInfo, 1);
 appendPageLinks(studentInfo);
 
-//let link = document.querySelectAll('.pagination a')
+
