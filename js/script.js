@@ -52,6 +52,9 @@ function appendPageLinks(studentInfo) {
       ul.appendChild(li);
       li.appendChild(a);
       a.textContent = i;
+      if (i == 1){
+         a.className = "active"
+      } 
       a.addEventListener('click', (e) => {
          let a = document.querySelectorAll('.pagination li a');
          for(let k=0; k <a.length; k++) {
